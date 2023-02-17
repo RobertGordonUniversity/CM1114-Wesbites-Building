@@ -1,0 +1,46 @@
+
+
+
+body{
+    background-color: grey;
+    color: blue;
+}
+
+
+h1 {
+
+    color: black;
+    background-color: white;
+}
+
+
+
+main{
+    background-color: white;
+    color: black
+}
+
+
+
+nav li{
+    border: 2px, solid;
+    color: darkblue;
+    background-color: cyan;
+    list-style-type: none;
+
+}
+
+nav li a{
+    color: rgb(23, 23, 223);
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover{
+    background-color: rgb(4, 119, 196);
+}
+
+:active{
+
+    background-color: blue;
+}
