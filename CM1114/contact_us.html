@@ -2,7 +2,7 @@
     <head>
         <div><img src="images/heimer2.jpeg" alt="logo" height="300" width="800"/></div>
         <title>heimer.gg</title>
-    
+        <link rel='stylesheet' href='css/contactus.css'>
     </head>
 
 
@@ -15,7 +15,6 @@
             <li><a href ="current_members.html">Current Members</a></li>
             <li><a href="event_callendar.html">Events</a></li>
             <li><a href="contact_us.html">Contact Us</a></li>
-            <li class=”active”><a href=”contact_us.html”></a></li>
     
         </ul>
     
@@ -42,13 +41,14 @@
 
     <label for="news">Want emails on up to date metas?</label>
     <input type="radio" news="news" value=""/> <br/>
-
-    <label for="submit">SUBMIT</label>
-    <input type="submit" sumbit="submit" value=""/> <br/>
+    <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
     </fieldset>
 </form>
 
+<div id=”left_col”>
+<p id=”form_outcome”> </p>
 
+</div>
 
 </body>
 
