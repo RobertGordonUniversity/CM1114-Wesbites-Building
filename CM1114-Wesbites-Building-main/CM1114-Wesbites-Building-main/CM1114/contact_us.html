@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!--Using utf-8 script  -->
+  <meta charset="utf-8">
+
+  <!-- Common website development again -->
+  <title>heimer.gg</title>
+
+  <!--Style sheet  -->
+  <link rel="stylesheet" href="css/contactus.css">
+
+</head>
+
+<!-- Main body of the web -->
+<body>
+
+    <!-- Navigation tools -->
+  <nav>
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="img_gallery.html">Gallery</a></li>
+      <li><a href="current_members.html">Current Members</a></li>
+      <li><a href="event_callendar.html">Events</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+      <li><a href="metas.html">Metas</a></li>
+      <li><a href="Rivals.html">Rivals</a></li>
+      <li><a href="FavouriteChamps.html">Favs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Form to be submitted -->
+  <div class="container">
+    <div class="form-container">
+      <form>
+        <fieldset>
+          <legend>Join us for up to date metas</legend>
+          <label for="name">Name:</label> <!-- Name -->
+          <input type="text" name="name" value="" /> <br />
+  
+          <label for="password">Password:</label> <!--Password  -->
+          <input type="password" password="password" value="" /> <br />
+  
+          <label for="email">Email:</label> <!--Email  -->
+          <input type="text" email="email" value="" /> <br />
+  
+          <label for="news">Want emails on up to date metas?</label> <!--Optional newsletter  -->
+          <input type="radio" news="news" value="" /> <br />
+          <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
+        </fieldset> <!--Onclick event  -->
+  
+        <p id="form_outcome"> </p>
+      </form>
+    </div>
+  <!--Container for tweets, this puts both the tweet and form side by side-->
+    <div class="tweet-container">
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          "&quot;Everyone else is trash&quot; is one of our favorite League moments of all time. We were lucky to have partnered with you. Good luck on whatever captures your imagination next! <a href='https://t.co/JUOgfIVzHB'>https://t.co/JUOgfIVzHB</a>"
+        </p>
+        &mdash; U.GG (@UdotGG) <a href="https://twitter.com/UdotGG/status/1331715100038864897?ref_src=twsrc%5Etfw">November 25, 2020</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+<main>
+
+    <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Heimer.gg</p>
+  </footer></main>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Doctype set with logo, title and stylesheet -->
+        <div><img src="images/heimer2.jpeg" alt="logo" height="300" width="800"/></div>
+        <title>heimer.gg</title>
+        <link rel='stylesheet' href='css/favs.css   '>
+    </head>
+
+    <body>    
+        <nav>
+            <!--Navigation tool bar for other pages  -->
+            <ul>
+                <li><a href ="Index.html">Home</a></li>
+                <li><a href ="img_gallery.html">Gallery</a></li>
+                <li><a href ="current_members.html">Current Members</a></li>
+                <li><a href="event_callendar.html">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="metas.html">Metas</a></li>
+                <li><a href="Rivals.html">Rivals</a></li>
+                <li><a href="FavouriteChamps.html">Favs</a></li>
+            </ul>
+        </nav>
+        <!--5 images are set of champions which contain a quote they say and full splash art  -->
+        <!-- Set in a row where you only see the 5 small splash arts until a mouse event occurs -->
+        <div class="row">
+            <div class="image-container">
+                <img src="images/smallgath.jpeg" class="rounded-circle massie-hovering" height="120" width="120" onmouseover="showChogath()" onmouseout="hideChogath()">
+                <p id="chogath-text" style="display:none;">Behold the terror of the void!</p>
+                <img id="chogath" src="images/chogath.jpeg" height="700" width="1200" style="display:none;">
+            </div>
+
+            <div class="image-container">
+                <img src="images/smallkaiser.jpeg" class="rounded-circle massie-hovering" height="120" width="120" onmouseover="showMordekaiser()" onmouseout="hideMordekaiser()">
+                <p id="mordekaiser-text" style="display:none;">I raise my iron fist to subjagate the living!</p>
+                <img id="mordekaiser" src="images/mordekaiser.jpg" height="700" width="1200" style="display:none;">
+            </div>
+
+
+            <div class="image-container">
+                <img src="images/smallsus.jpeg" class="rounded-circle massie-hovering" height="120" width="120" onmouseover="showNasus()" onmouseout="hideNasus()">
+                <p id="nasus-text" style="display:none;">Perhaps... Shurima was meant to fall.</p>
+                <img id="nasus" src="images/nasus.jpeg" height="700" width="1200" style="display:none;">
+            </div>
+
+            <div class="image-container">
+                <img src="images/smax.jpeg" class="rounded-circle massie-hovering" height="120" width="120" onmouseover="showJax()" onmouseout="hideJax()">
+                <p id="jax-text" style="display:none;">Who wants a piece of the champ?</p>
+                <img id="jax" src="images/jax.jpeg" height="700" width="1200" style="display:none;">
+            </div>
+
+            <div class="image-container">
+                <img src="images/smallkench.jpeg" class="rounded-circle massie-hovering" height="120" width="120" onmouseover="showTahmkench()" onmouseout="hideTahmKench()">
+                <p id="tahmkench-text" style="display:none;">Yummy</p>
+                <img id="tahmkench" src="images/tahmkench.jpeg" height="700" width="1200" style="display:none;">
+            </div>
+        </div>
+<!--Script which checks the hover, which ever is hovered will delete images of the all the other champs until another is hovered  -->
+        <script>
+function showChogath() {
+    document.getElementById("chogath").style.display = "inline-block";
+    document.getElementById("chogath-text").style.display = "block";
+    document.getElementById("mordekaiser").style.display = "none";
+    document.getElementById("mordekaiser-text").style.display = "none";
+    document.getElementById("nasus").style.display = "none";
+    document.getElementById("nasus-text").style.display = "none";
+    document.getElementById("jax").style.display = "none";
+    document.getElementById("jax-text").style.display = "none";
+    document.getElementById("tahmkench").style.display = "none";
+    document.getElementById("tahmkench-text").style.display = "none";
+
+}
+
+function showMordekaiser() {
+    document.getElementById("mordekaiser").style.display = "inline-block";
+    document.getElementById("mordekaiser-text").style.display = "block";
+    document.getElementById("chogath").style.display = "none";
+    document.getElementById("chogath-text").style.display = "none";
+    document.getElementById("nasus").style.display = "none";
+    document.getElementById("nasus-text").style.display = "none";
+    document.getElementById("jax").style.display = "none";
+    document.getElementById("jax-text").style.display = "none";
+    document.getElementById("tahmkench").style.display = "none";
+    document.getElementById("tahmkench-text").style.display = "none";
+}
+
+function showNasus() {
+    document.getElementById("nasus").style.display = "inline-block";
+    document.getElementById("nasus-text").style.display = "block";
+    document.getElementById("chogath").style.display = "none";
+    document.getElementById("chogath-text").style.display = "none";
+    document.getElementById("mordekaiser").style.display = "none";
+    document.getElementById("mordekaiser-text").style.display = "none";
+    document.getElementById("jax").style.display = "none";
+    document.getElementById("jax-text").style.display = "none";
+    document.getElementById("tahmkench").style.display = "none";
+    document.getElementById("tahmkench-text").style.display = "none";
+}
+
+function showJax() {
+    document.getElementById("jax").style.display = "inline-block";
+    document.getElementById("jax-text").style.display = "block";
+    document.getElementById("mordekaiser").style.display = "none";
+    document.getElementById("mordekaiser-text").style.display = "none";
+    document.getElementById("nasus").style.display = "none";
+    document.getElementById("nasus-text").style.display = "none";
+    document.getElementById("chogath").style.display = "none";
+    document.getElementById("chogath-text").style.display = "none";
+    document.getElementById("tahmkench").style.display = "none";
+    document.getElementById("tahmkench-text").style.display = "none";
+
+}
+
+function showTahmkench() {
+    document.getElementById("tahmkench").style.display = "inline-block";
+    document.getElementById("tahmkench-text").style.display = "block";
+    document.getElementById("mordekaiser").style.display = "none";
+    document.getElementById("mordekaiser-text").style.display = "none";
+    document.getElementById("nasus").style.display = "none";
+    document.getElementById("nasus-text").style.display = "none";
+    document.getElementById("jax").style.display = "none";
+    document.getElementById("jax-text").style.display = "none";
+    document.getElementById("chogath").style.display = "none";
+    document.getElementById("chogath-text").style.display = "none";
+
+}
+
+
+        </script>
+
+        <!--Tells you what the page does  -->
+        <h2>Welcome, please hover a champion of Heimer.gg' favourites</h2>
+        <img src="images/heimer3.jpeg" height = "300" width="800">
+
+        <main>
+
+            <!--Footer  -->
+            <footer>
+              <p>&copy; 2023 Heimer.gg</p>
+            </footer>
+      </main>
+    </body>
+</html>

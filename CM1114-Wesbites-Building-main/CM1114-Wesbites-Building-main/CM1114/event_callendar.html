@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!--Doctype html, set the script, stylesheet set, title set  -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>heimer.gg</title>
+    <link rel='stylesheet' href='css/event.css'>
+  </head>
+<!-- Main body -->
+  <body> 
+    
+    <!-- Navigation tool bar for the other pages -->
+    <nav>
+      <ul>
+        <li><a href ="Index.html">Home</a></li>
+        <li><a href ="img_gallery.html">Gallery</a></li>
+        <li><a href ="current_members.html">Current Members</a></li>
+        <li><a href="event_callendar.html">Events</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="metas.html">Metas</a></li>
+        <li><a href="Rivals.html">Rivals</a></li>
+        <li><a href="FavouriteChamps.html">Favs</a></li>
+      </ul>
+    </nav>
+
+    <!--Table event page  -->
+    <table>
+      <thead> <!-- Table headers -->
+        <tr>
+          <th>Week</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Week1</td> <!-- Week -->
+          <td></td> <!--Empty event day  -->
+          <td>Heimer love</td> <!--Filled event day  -->
+          <td></td>
+          <td></td>
+          <td>Jax meta</td>
+          <td></td>
+          <td>Tyler1 Stream</td>
+        </tr>
+
+        <!-- New table row -->
+        <tr>
+          <td>Week2</td>
+          <td>Asol rework</td>
+          <td></td>
+          <td>Singed Lore</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Week3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Week4</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Event submission tab -->
+    <main>
+        <p>Want to recommend an event? Tell us below!</p>
+        <form name="event">
+          <label for="event_title">Event Title:</label>
+          <input type="text" name="event_title" placeholder="Enter event title"> <!--Event title name  -->
+  
+          <label for="event_date">Event Date:</label> <!--Set date  -->
+          <input type="date" name="event_date">
+  
+          <button type="button" onclick="submit_event()">Submit Event</button> <!--Event submitted confirmation  -->
+        </form>
+  
+          
+      </main>
+  
+      <footer>
+        <p>&copy; 2023 Heimer.gg</p> <!--Footer  -->
+      </footer>
+  <!--Event script to check if fields are filled or not  -->
+      <script>
+        function submit_event() {
+          var title = document.forms["event"]["event_title"].value;
+          var date = document.forms["event"]["event_date"].value;
+          if (title == "") {
+            alert("An event must have a title!");
+          }
+          else {
+            if (date.length == 0) {
+              alert("An event must have a date!");
+            }
+            else {
+              alert("Event submitted! The society will contact you soon!");
+            }
+          }
+        }
+      </script>
+  
+    </body>
+  </html>

@@ -1,0 +1,114 @@
+<!-- This is the HTML code for the webpage -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- The title of the webpage -->
+    <title>heimer.gg</title>
+
+    <!-- The Bootstrap stylesheet, which adds styling to the webpage -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+
+    <!-- The Bootstrap JavaScript library, which adds interactive elements to the webpage -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- The custom CSS stylesheet -->
+    <link rel='stylesheet' href='css/main.css'>
+
+    <!-- The JavaScript code to handle login functionality -->
+    <script>
+        var counter = 2;
+        function login(){
+        if(counter % 2 == 0){
+            alert('You have been logged in!');
+        }
+        else {
+            alert('You have been logged out!');
+        }
+            counter += 1;
+        }
+    </script>
+
+    <!-- A div element for decorative purposes -->
+    <div style="border: 16px"></div>
+</head>
+
+<body>
+    <!-- The header section of the webpage, containing the logo and login form -->
+    <header>
+        <div>
+          <!-- The logo of the webpage -->
+          <img src="images/heimerPixel.jpeg" alt="logo" height="70" width="70" />
+          <!-- The title of the webpage -->
+          <h1>Heimer.gg</h1>
+        </div>
+        <!-- The login form for the webpage -->
+        <form id="login">
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name" value="" />
+          <label for="password">Password:</label>
+          <input id="password" type="password" password="password" value="" />
+          <button id="button" type="button" onclick="login()">Login</button>
+        </form>
+      </header>
+
+    <!-- The navigation bar of the webpage -->
+    <nav>
+        <ul>
+            <!-- Links to other pages of the website -->
+            <li><a href ="FirstSite.html">Home</a></li>
+            <li><a href ="img_gallery.html">Gallery</a></li>
+            <li><a href ="current_members.html">Current Members</a></li>
+            <li><a href="event_callendar.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="metas.html">Metas</a></li>
+            <li><a href="Rivals.html">Rivals</a></li>
+            <li><a href="FavouriteChamps.html">Favs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main part of website - title -->
+    <main>
+        <h2>Heimer.gg welcomes you</h2>
+        <p>We are heimer.gg, we shall provide to you a perfect comparison of league of legends champion meta and what is popular during this patch.</p>
+        
+        <!-- Mascot image -->
+        <div><img src="images/Heimer.jpeg" alt="mainImg" class ="center" width="400" height="300"/></div>
+    
+        
+        <!-- Quick introduction -->
+        <h2>Have you not realised that the strongest metas is why you should be checking us out??</h2>
+        <p>You are losing so much LP because you are both trash and not meta abusing. Fear not, with faker - we have found the strongest metas for you to abuse</p>
+        <div><img src="images/fakershh.jpeg" alt="mainImg" class ="center" width="400" height="300"/></div>
+        <p>So lets "shh" and start looking at these metas.</p>
+
+<!-- News article  -->
+<div class = "news">
+  <aside style="display: flex; align-items: center;">
+    <div><img src="images/riot.jpeg" alt="mainImg" width="100" height="100"/></div>
+    <div style="margin-left: 10px;">
+      <h5>We are partnering!</h5>
+      <h6>Heimer.gg is finally pairing up with Riot Games HQ!</h6>
+    </div>
+  </aside>
+</div>
+
+          
+          
+    </main>
+    <main>
+
+        <!--The footer  -->
+        <footer>
+          <p>&copy; 2023 Heimer.gg</p>
+        </footer>
+  </main>
+
+</body>
+
+</html>

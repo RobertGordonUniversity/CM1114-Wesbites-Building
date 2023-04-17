@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <!-- Doctype set with title, stylesheet and filter applied to blur -->
+    <head>
+        <title>heimer.gg</title>
+        <link rel='stylesheet' href='css/img.css'>
+        <style>
+            .gallery-img {
+                filter: blur(3px);
+            }
+        </style>
+    </head>
+    <body>
+        <div><img src="images/heimer2.jpeg" alt="logo" height="300" width="800"/></div>
+        <nav>
+            <!--Navigation tool bar for other pages  -->
+            <ul>
+                <li><a href ="Index.html">Home</a></li>
+                <li><a href ="img_gallery.html">Gallery</a></li>
+                <li><a href ="current_members.html">Current Members</a></li>
+                <li><a href="event_callendar.html">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="metas.html">Metas</a></li>
+                <li><a href="Rivals.html">Rivals</a></li>
+                <li><a href="FavouriteChamps.html">Favs</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- A column class is added to make it 3x3 with nblurred images -->
+            <div id="img-gallery" class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/carry.jpeg" class="gallery-img" width="400" height="400" />
+                        <img src="images/heimer2.jpeg" class="gallery-img" width="400" height="400"/>
+                        <img src="images/heimer3.jpeg" class="gallery-img" width="400" height="400"/>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/happy.jpeg" class="gallery-img" width="400" height="400"/>
+                        <img src="images/faker.jpeg" class="gallery-img" width="400" height="400"/>
+                        <img src="images/Heimer.jpeg" class="gallery-img" width="400" height="400"/>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/fakershh.jpeg" class="gallery-img" width="400" height="400"/>
+                        <img src="images/victory.jpeg" class="gallery-img" width="400" height="400"/>
+                        <img src="images/rivalry.jpeg" class="gallery-img" width="400" height="400"/>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--Script for on mouse event where the image unblurs once the mouse is hovered upon the image, once it gets removed the image is once again blurred  -->
+        <script>
+            const galleryImages = document.querySelectorAll('.gallery-img');
+            galleryImages.forEach(img => {
+                img.addEventListener('mouseover', () => {
+                    galleryImages.forEach(otherImg => {
+                        if (otherImg !== img) {
+                            otherImg.style.filter = 'blur(3px)';
+                        }
+                    });
+                    img.style.border = 'solid blue 2px';
+                    img.style.filter = 'none';
+                });
+                img.addEventListener('mouseout', () => {
+                    galleryImages.forEach(otherImg => {
+                        otherImg.style.filter = 'blur(3px)';
+                        otherImg.style.border = 'none';
+                    });
+                });
+            });
+        </script>
+
+
+<main>
+    <!--Footer  -->
+    <footer>
+      <p>&copy; 2023 Heimer.gg</p>
+    </footer>
+</main>
+    </body>
+</html>
